@@ -151,3 +151,7 @@ Open website:
 ```text
 http://example.localhost
 ```
+
+## Follow-up: wildcard domains for worktrees
+
+If you use Git worktrees and want each worktree to run on its own `.localhost` subdomain, check out [Apache Wildcard Domains for Worktrees](apache-wildcard-domains-for-worktrees.md).
