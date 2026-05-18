@@ -8,8 +8,6 @@ http://<WORKTREE>.<PROJECT>.localhost
 
 This guide assumes you have the [`localhost-mamp-dev-setup`](https://github.com/bleech/localhost-mamp-dev-setup) configured and only covers host-level Apache routing.
 
-In addition, I recommend configuring your WordPress project to allow setting local URLs from `.env` to work around issues with Git, Vite, and DB cloning. See the following migration tutorial: [`wordpress-env-urls-for-worktrees`](wordpress-env-urls-for-worktrees.md).
-
 > To apply this setup with a coding agent, use the Bleech
 > `localhost-mamp-worktrees` skill:
 > https://github.com/bleech/skills/tree/main/localhost-mamp-worktrees
@@ -101,6 +99,12 @@ http://worktree.example-website.localhost
 ```
 
 Expected result: the WordPress site loads from the worktree.
+
+## Recommended: configure project URLs via `.env`
+
+In addition, I recommend configuring your WordPress project to allow setting local URLs from `.env` to work around issues with Git, Vite, and DB cloning.
+
+See the migration tutorial: [`wordpress-env-urls-for-worktrees`](wordpress-env-urls-for-worktrees.md).
 
 ## Optional: supacode setup
 
