@@ -60,10 +60,10 @@ export LOCAL_URL
 In the theme `vite.config.js`, pass the worktree URL to Flynt’s Vite integration:
 
 ```js
-const wordpressHost = process.env.LOCAL_URL || 'http://[PROJECT].localhost'
+const wordpressHost = process.env.LOCAL_URL || process.env.VITE_DEV_SERVER_HOST || 'http://[PROJECT].localhost'
 ```
 
-This assumes Vite is started through `./run`, so `LOCAL_URL` is already exported.
+This assumes Vite is started through `./run`, so `LOCAL_URL` is already exported. If `LOCAL_URL` is not set, existing `VITE_DEV_SERVER_HOST` behavior still works.
 
 ## Test with a worktree
 
@@ -99,7 +99,15 @@ Expected result: the WordPress site loads from the worktree.
 
 ## Optional: Supacode setup
 
-Create an untracked `supacode.json` in the project root to automate the URL setup and project install on worktree creation (replace `[PROJECT]`):
+Create an untracked `supacode.json` in the project root to automate the URL setup and project install on worktree creation (replace `[PROJECT]`).
+
+First, keep the local Supacode config out of git:
+
+```gitignore
+/supacode.json
+```
+
+Then create `supacode.json` locally:
 
 ```json
 {
