@@ -8,7 +8,7 @@ http://<WORKTREE>.<PROJECT>.localhost
 
 This guide assumes you have the [`localhost-mamp-dev-setup`](https://github.com/bleech/localhost-mamp-dev-setup) configured and only covers host-level Apache routing.
 
-In addition, I recommend configuring your WordPress project to allow setting local URLs from `.env` to work around issues with Git, Vite, and DB cloning. See the following migration tutorial: [`wordpress-env-urls-for-worktrees`](../wordpress-env-urls-for-worktrees/wordpress-env-urls-for-worktrees.md).
+In addition, I recommend configuring your WordPress project to allow setting local URLs from `.env` to work around issues with Git, Vite, and DB cloning. See the following migration tutorial: [`wordpress-env-urls-for-worktrees`](wordpress-env-urls-for-worktrees.md).
 
 > [!IMPORTANT]
 > If your project uses the new devstack, you don't need any of this.
