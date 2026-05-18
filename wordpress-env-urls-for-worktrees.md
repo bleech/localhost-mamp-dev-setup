@@ -97,17 +97,17 @@ http://worktree.example-website.localhost
 
 Expected result: the WordPress site loads from the worktree.
 
-## Optional: Supacode setup
+## Optional: supacode setup
 
-Create an untracked `supacode.json` in the project root to automate the URL setup and project install on worktree creation (replace `[PROJECT]`).
+Automate the URL setup and project installation on worktree creation with [supacode](https://supacode.sh/).
 
-First, keep the local Supacode config out of git:
+First, add `supacode.json` to the project's `.gitignore` so the local supacode config stays out of git:
 
 ```gitignore
 /supacode.json
 ```
 
-Then create `supacode.json` locally:
+Then create `supacode.json` locally (replace `[PROJECT]`):
 
 ```json
 {

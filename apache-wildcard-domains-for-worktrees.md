@@ -98,11 +98,11 @@ http://worktree.example-website.localhost
 
 Expected result: the WordPress site loads from the worktree.
 
-## Optional: Supacode setup
+## Optional: supacode setup
 
-If you use Supacode worktrees, route wildcard domains to Supacode's worktree directory instead of `~/www`.
+If you use [supacode](https://supacode.sh/), route wildcard domains to supacode's worktree directory instead of `~/www`.
 
-First, ensure Apache can serve Supacode worktrees by adding this directory access block, replacing `<USERNAME>`:
+First, ensure Apache can serve supacode worktrees by adding this directory access block, replacing `<USERNAME>`:
 
 ```apache
 <Directory "/Users/<USERNAME>/.supacode/repos">
@@ -112,7 +112,7 @@ First, ensure Apache can serve Supacode worktrees by adding this directory acces
 </Directory>
 ```
 
-Then use a Supacode-specific wildcard vhost, replacing `<USERNAME>` and the project name:
+Then use a supacode-specific wildcard vhost, replacing `<USERNAME>` and the project name:
 
 ```apache
 <VirtualHost *:80>
