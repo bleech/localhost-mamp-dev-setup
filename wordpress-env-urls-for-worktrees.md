@@ -6,6 +6,10 @@ For Bleech projects using Flynt, make `.env`/`LOCAL_URL` the single source of tr
 - Per-worktree URLs live in `.env`, not as local edits to `wp-config.php`.
 - `wp-config.php`, `./run`, WP-CLI search-replace, and Flynt’s Vite host config all use `.env`/`LOCAL_URL`.
 
+> To apply this setup with a coding agent, use the Bleech
+> `localhost-mamp-worktrees` skill:
+> https://github.com/bleech/skills/tree/main/localhost-mamp-worktrees
+
 ## Project changes
 
 ### 1. Add root `.env` loading

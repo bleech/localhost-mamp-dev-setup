@@ -155,3 +155,7 @@ http://example.localhost
 ## Follow-up: wildcard domains for worktrees
 
 If you use Git worktrees and want each worktree to run on its own `.localhost` subdomain, check out [Apache Wildcard Domains for Worktrees](apache-wildcard-domains-for-worktrees.md).
+
+> To apply this setup with a coding agent, use the Bleech
+> `localhost-mamp-worktrees` skill:
+> https://github.com/bleech/skills/tree/main/localhost-mamp-worktrees
